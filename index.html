@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta  http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lämpötilamuunnin</title>
+</head>
+<body>
+
+    <h2>Lämpötilamuunnin</h2>
+
+    <select id="suunta">
+        <option value="c2f">Celcius -> Fahrenheit</option>
+        <option value="f2c">Fahrenheit -> Celcius</option>
+    </select>
+    <br><br>
+
+    <form>
+        <label for="lampotila">Syötä lämpötila:</label><br>
+        <input type="text" id="lampotila" name="lampotila">
+        <input type="button" value="Muunna" onclick="muunnalampotila()"><br>
+
+        <input type="radio" id="desimaaliyksi" name="desimaalit" value="1" checked>
+        <label for="desimaaliyksi">1 desimaali</label><br>
+
+        <input type="radio" id="desimaalikaksi" name="desimaalit" value="2">
+        <label for="desimaalikaksi">2 desimaali</label><br>
+
+        <input type="radio" id="desimaalikolme" name="desimaalit" value="3">
+        <label for="desimaalikolme">3 desimaali</label>
+    </form>
+
+    <p id="tulos"></p>
+    
+    <script src="main.js"></script>
+</body>
+</html>
